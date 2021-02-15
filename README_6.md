@@ -1,7 +1,7 @@
 ## SingleDatePickerDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_25.png"  width="300"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_25.png"  width="300"/>
 </p>
 
 You can change UI with this configuration.
@@ -26,4 +26,4 @@ new MultiDataPickerDialog(getSupportFragmentManager())
 
 ##
 
-[FullCode](https://github.com/gzeinnumer/DialogAndroid/blob/main/example/MultiDataPickerDialog/MainActivity.java)
+[FullCode](https://github.com/gzeinnumer/DialogAndroid/blob/master/example/MultiDataPickerDialog/MainActivity.java)

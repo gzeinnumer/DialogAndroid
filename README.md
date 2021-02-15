@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_3.png"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_3.png"/>
 </p>
 
 <h1 align="center">
@@ -185,17 +185,17 @@ new ConfirmDialog(getSupportFragmentManager())
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_3.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_3.png" width="500"/>
 </p>
 
 #
 #### ConfirmDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_1.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_1.png" width="500"/>
 </p>
 
-You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_1.md).
+You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_1.md).
 
 ---
 
@@ -236,17 +236,17 @@ new InfoDialog(getSupportFragmentManager())
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_6.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_6.png" width="500"/>
 </p>
 
 #
 #### InfoDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_8.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_8.png" width="500"/>
 </p>
 
-You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_2.md).
+You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_2.md).
 
 ---
 
@@ -287,17 +287,17 @@ new InfoDialog(getSupportFragmentManager())
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_10.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_10.png" width="500"/>
 </p>
 
 #
 #### NumberPickerDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_13.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_13.png" width="500"/>
 </p>
 
-You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_3.md).
+You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_3.md).
 
 ---
 
@@ -320,17 +320,17 @@ loadingDialog.dismis();
 **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_15.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_15.png" width="500"/>
 </p>
 
 #
 #### LoadingDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_14.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_14.png" width="500"/>
 </p>
 
-You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_4.md).
+You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_4.md).
 
 ---
 
@@ -366,20 +366,20 @@ new SingleDatePickerDialog(getSupportFragmentManager())
 #
 **Preview** :
 
-|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_18.png"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_19.png"/>|
+|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_18.png"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_19.png"/>|
 |--|--|
 
-|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_20.png" width="400"/>|
+|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_20.png" width="400"/>|
 |--|
 
 #
 #### SingleDatePickerDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_21.png" width="300"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_21.png" width="300"/>
 </p>
 
-You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_5.md).
+You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_5.md).
 
 ---
 
@@ -414,20 +414,20 @@ new MultiDatePickerDialog(getSupportFragmentManager())
 #
 **Preview** :
 
-|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_22.png"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_23.png"/>|
+|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_22.png"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_23.png"/>|
 |--|--|
 
-|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_24.png" width="400"/>|
+|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_24.png" width="400"/>|
 |--|
 
 #
 #### MultiDataPickerDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_25.png" width="300"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_25.png" width="300"/>
 </p>
 
-You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_6.md).
+You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_6.md).
 
 ---
 # Example Code/App

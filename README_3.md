@@ -1,7 +1,7 @@
 ## ConfirmDialog -> Customize
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_13.png"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_13.png"/>
 </p>
 
 You can change UI with this configuration.
@@ -92,7 +92,7 @@ You can change UI with this configuration.
 **Look At Orange Arrow.** you can set shape/canvas from `drawable` to `dialog` with `shape.xml`->`<shape></shape>`. in my example i am using `rounded_corner_2.xml`.
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_11.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_11.png" width="500"/>
 </p>
 
 **XML** :
@@ -111,10 +111,10 @@ You can change UI with this configuration.
 </shape>
 ```
 Other Example:
-- Same Radius -> `R.drawable.rounded_corner` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/main/example/Shapes/rounded_corner.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_SHAPE.md#same-radius)
-- Different Radius -> `R.drawable.rounded_corner_2` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/main/example/Shapes/rounded_corner_2.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_SHAPE.md#different-radius)
-- Dialog 3D -> `R.drawable.rounded_layer` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/main/example/Shapes/rounded_layer.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_SHAPE.md#dialog-3d)
-- Shadow Dialog -> `R.drawable.dialog_shadow` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/main/example/Shapes/dialog_shadow.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/main/README_SHAPE.md#shadow-dialog)
+- Same Radius -> `R.drawable.rounded_corner` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/master/example/Shapes/rounded_corner.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_SHAPE.md#same-radius)
+- Different Radius -> `R.drawable.rounded_corner_2` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/master/example/Shapes/rounded_corner_2.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_SHAPE.md#different-radius)
+- Dialog 3D -> `R.drawable.rounded_layer` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/master/example/Shapes/rounded_layer.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_SHAPE.md#dialog-3d)
+- Shadow Dialog -> `R.drawable.dialog_shadow` [xml](https://github.com/gzeinnumer/DialogAndroid/blob/master/example/Shapes/dialog_shadow.xml) [Preview](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_SHAPE.md#shadow-dialog)
 
 **Code** :
 ```java
@@ -155,8 +155,8 @@ Style that i prepare for you
 
 ##
 
-[FullCode](https://github.com/gzeinnumer/DialogAndroid/blob/main/example/NumberPickerDialog/MainActivity.java) **Preview** :
+[FullCode](https://github.com/gzeinnumer/DialogAndroid/blob/master/example/NumberPickerDialog/MainActivity.java) **Preview** :
 
 <p align="center">
-  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/main/preview/MyLibDialog_12.png" width="500"/>
+  <img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_12.png" width="500"/>
 </p>
