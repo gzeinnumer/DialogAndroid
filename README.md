@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  MyLibDialog - Easy Dialog
+  DialogAndroid - Easy Dialog
 </h1>
 
 <div align="center">
