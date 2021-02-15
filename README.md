@@ -43,7 +43,7 @@ allprojects {
 dependencies {
   ...
   implementation 'com.github.gzeinnumer:DialogAndroid:version'
-  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:0.1.5'
+  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.0.0'
   implementation 'com.google.android.material:material:1.2.1'
 }
 ```
