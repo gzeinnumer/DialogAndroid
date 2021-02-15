@@ -1,2 +1,3 @@
+include ':da'
 include ':app'
 rootProject.name = "DialogAndroid"
