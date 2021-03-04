@@ -2,6 +2,7 @@ package com.gzeinnumer.da.dialog.infoDialog;
 
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -166,11 +167,19 @@ public class InfoDialogSetting extends BaseDialog {
         }
 
         if (tvTitleAlignment != View.TEXT_ALIGNMENT_CENTER) {
-            _tvTitle.setTextAlignment(tvTitleAlignment);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                _tvTitle.setTextAlignment(tvTitleAlignment);
+            } else {
+                _tvTitle.setGravity(tvTitleAlignment);
+            }
         }
 
         if (tvContentAlignment != View.TEXT_ALIGNMENT_TEXT_START) {
-            _tvContent.setTextAlignment(tvContentAlignment);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                _tvContent.setTextAlignment(tvContentAlignment);
+            } else {
+                _tvContent.setGravity(tvTitleAlignment);
+            }
         }
 
         if (buttonColor != 0 && btnStyle == ButtonStyle.ButtonContained) {
