@@ -1,6 +1,7 @@
 package com.gzeinnumer.da.dialog.numberPicker;
 
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,8 @@ public class NumberPickerDialogSetting extends BaseDialog {
     protected NumberPickerDialog.OnOkPressed onOkPressed;
 
     protected int buttonColor = 0;
+    protected int buttonOkColor = 0;
+    protected int buttonCancelColor = 0;
     protected boolean buttonAllCaps = true;
     protected ButtonStyle btnStyle;
     protected String tvTitleValue;
@@ -177,16 +180,32 @@ public class NumberPickerDialogSetting extends BaseDialog {
         }
 
         if (tvTitleAlignment != View.TEXT_ALIGNMENT_CENTER) {
-            _tvTitle.setTextAlignment(tvTitleAlignment);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                _tvTitle.setTextAlignment(tvTitleAlignment);
+            } else {
+                _tvTitle.setGravity(tvTitleAlignment);
+            }
         }
 
         if (tvContentAlignment != View.TEXT_ALIGNMENT_TEXT_START) {
-            _tvContent.setTextAlignment(tvContentAlignment);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                _tvContent.setTextAlignment(tvContentAlignment);
+            } else {
+                _tvContent.setGravity(tvTitleAlignment);
+            }
         }
 
         if (buttonColor != 0 && btnStyle == ButtonStyle.ButtonContained) {
             _dBtnCancelMBC.setBackgroundColor(buttonColor);
             _dBtnOkMBC.setBackgroundColor(buttonColor);
+        }
+
+        if (buttonOkColor != 0 && btnStyle == ButtonStyle.ButtonContained) {
+            _dBtnOkMBC.setBackgroundColor(buttonOkColor);
+        }
+
+        if (buttonCancelColor != 0 && btnStyle == ButtonStyle.ButtonContained) {
+            _dBtnCancelMBC.setBackgroundColor(buttonCancelColor);
         }
 
         if (buttonColor != 0) {

@@ -44,6 +44,10 @@ You can change UI with this configuration.
 - Change Text Button Cancel Color
   - `.setBtnCancelTitleColor(getResources().getColor(R.color.colorPrimary))`
   - `.setBtnCancelTitleColor(Color.parseColor("#03DAC5"))`
+- Change Button Cancel Color
+  - `.setButtonCancelColor(getResources().getColor(R.color.colorPrimary))`
+  - `.setButtonCancelColor(Color.parseColor("#03DAC5"))`
+  you can use this only if you use `.setButtonStyle(ButtonStyle.ButtonContained)`
 - Change Icon Button Cancel
   - `.setCancelIconLeft(R.drawable.ic_baseline_add_24)`
   - `.setCancelIconTop(R.drawable.ic_baseline_add_24)`
@@ -56,6 +60,10 @@ You can change UI with this configuration.
 - Change Text Button Ok Color
   - `.setBtnOkTitleColor(getResources().getColor(R.color.colorPrimary))`
   - `.setBtnOkTitleColor(Color.parseColor("#03DAC5"))`
+- Change Button Ok Color
+  - `.setButtonOkColor(getResources().getColor(R.color.colorPrimary))`
+  - `.setButtonOkColor(Color.parseColor("#03DAC5"))`
+  you can use this only if you use `.setButtonStyle(ButtonStyle.ButtonContained)`
 - Change Icon Button Ok
   - `.setOkIconLeft(R.drawable.ic_baseline_add_24)`
   - `.setOkIconTop(R.drawable.ic_baseline_add_24)`
