@@ -1,6 +1,7 @@
 package com.gzeinnumer.da.dialog.loadingDialog;
 
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -60,7 +61,11 @@ public class LoadingDialogSetting extends BaseDialog {
             _tvContent.setTextColor(tvContentColor);
 
         if (tvContentAlignment != View.TEXT_ALIGNMENT_TEXT_START) {
-            _tvContent.setTextAlignment(tvContentAlignment);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                _tvContent.setTextAlignment(tvContentAlignment);
+            } else {
+                _tvContent.setGravity(tvContentAlignment);
+            }
         }
     }
 
