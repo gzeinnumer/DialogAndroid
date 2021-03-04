@@ -163,6 +163,16 @@ public class ConfirmDialog extends ConfirmDialogSetting {
         return this;
     }
 
+    public ConfirmDialog setButtonOkColor(int color) {
+        this.buttonOkColor = color;
+        return this;
+    }
+
+    public ConfirmDialog setButtonCancelColor(int color) {
+        this.buttonCancelColor = color;
+        return this;
+    }
+
     public ConfirmDialog setButtonAllCaps(boolean buttonAllCaps) {
         this.buttonAllCaps = buttonAllCaps;
         return this;

@@ -163,6 +163,16 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         return this;
     }
 
+    public NumberPickerDialog setButtonOkColor(int color) {
+        this.buttonOkColor = color;
+        return this;
+    }
+
+    public NumberPickerDialog setButtonCancelColor(int color) {
+        this.buttonCancelColor = color;
+        return this;
+    }
+
     public NumberPickerDialog setButtonAllCaps(boolean buttonAllCaps) {
         this.buttonAllCaps = buttonAllCaps;
         return this;
