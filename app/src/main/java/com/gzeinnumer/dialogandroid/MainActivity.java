@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new ConfirmDialog(getSupportFragmentManager())
-                .setTitle("ini title")
+//                .setTitle("ini title")
                 .setButtonStyle(ButtonStyle.ButtonContained)
                 .setContent("ini content")
                 .setButtonOkColor(getResources().getColor(R.color.light_blue_A100))
