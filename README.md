@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.1.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.1.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -472,6 +472,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/D
   - Support SDK 16
 - **3.1.0**
   - Spesial Button Color Contained
+- **3.1.1**
+  - More Space Button Parent
 
 ---
 # Contribution
