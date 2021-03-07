@@ -44,7 +44,7 @@ dependencies {
   ...
   implementation 'com.github.gzeinnumer:DialogAndroid:version'
   implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.0.0'
-  implementation 'com.google.android.material:material:1.2.1'
+  implementation 'com.google.android.material:material:1.3.0'
 }
 ```
 
