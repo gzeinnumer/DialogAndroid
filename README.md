@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.1.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.2.0-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -56,6 +56,7 @@ dependencies {
 - [x] [LoadingDialog](#loadingdialog)
 - [x] [SingleDatePickerDialog](#singledatepickerdialog)
 - [x] [MultiDatePickerDialog](#multidatepickerdialog)
+- [x] [TimeDialog](#timeDialog)
 
 ---
 # Tech stack and 3rd library
@@ -430,6 +431,42 @@ new MultiDatePickerDialog(getSupportFragmentManager())
 You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_6.md).
 
 ---
+
+### TimeDialog
+
+Dialog with **Calender like in material.io** that you can use to pick date with range.
+
+**Code** :
+
+```java
+new TimeDialog(getSupportFragmentManager())
+        .setTitle("Time")
+        .setHour(17)
+        .setMinute(17)
+        .setTimeFormat(TimeFormat.CLOCK_24H) //TimeFormat.CLOCK_12H
+        .addOnPositiveButtonClickListener(new TimeDialogPositiveCallBack() {
+            @Override
+            public void timeResult(int hours, int minutes) {
+                Toast.makeText(MainActivity.this, hours+":"+minutes, Toast.LENGTH_SHORT).show();
+            }
+        })
+        .build()
+        .show();
+```
+
+- `setTitle()` optional . default value `Pick Time`.
+- `setHour()` optional. default value `0`.
+- `setMinute()` optional. default value `0`.
+- `setTimeFormat()` optional. default value `TimeFormat.CLOCK_12H`.
+
+#
+**Preview** :
+
+|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_30.png" width="400"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_31.png" width="400"/>|
+|--|--|
+|`TimeFormat.CLOCK_12H`|`TimeFormat.CLOCK_24H`|
+
+---
 # Example Code/App
 
 [Sample Code And App](https://github.com/gzeinnumer/MyLibDialogExample)
@@ -474,6 +511,8 @@ You can Customize your dialog UI. [**ReadMore**](https://github.com/gzeinnumer/D
   - Spesial Button Color Contained
 - **3.1.1**
   - More Space Button Parent
+- **3.2.0**
+  - Time Picker
 
 ---
 # Contribution

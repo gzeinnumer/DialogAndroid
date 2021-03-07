@@ -1,12 +1,14 @@
 package com.gzeinnumer.dialogandroid;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.gzeinnumer.da.constant.ButtonStyle;
-import com.gzeinnumer.da.dialog.confirmDialog.ConfirmDialog;
+import com.google.android.material.timepicker.TimeFormat;
+import com.gzeinnumer.da.dialog.timePickerDialog.TimeDialog;
+import com.gzeinnumer.da.dialog.timePickerDialog.callback.TimeDialogPositiveCallBack;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,25 +17,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new ConfirmDialog(getSupportFragmentManager())
-//                .setTitle("ini title")
-                .setButtonStyle(ButtonStyle.ButtonContained)
-                .setContent("ini content")
-                .setButtonOkColor(getResources().getColor(R.color.light_blue_A100))
-                .setButtonCancelColor(getResources().getColor(R.color.grey_20))
-                .setBtnCancelTitleColor(getResources().getColor(R.color.red_500))
-                .onCancelPressedCallBack(new ConfirmDialog.OnCancelPressed() {
-                    @Override
-                    public void onCancelPressed() {
-                        Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .onOkPressedCallBack(new ConfirmDialog.OnOkPressed() {
-                    @Override
-                    public void onOkPressed() {
-                        Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .show();
+        findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new TimeDialog(getSupportFragmentManager())
+                        .setTitle("Time")
+                        .setHour(17)
+                        .setMinute(17)
+                        .setTimeFormat(TimeFormat.CLOCK_24H)
+                        .addOnPositiveButtonClickListener(new TimeDialogPositiveCallBack() {
+                            @Override
+                            public void timeResult(int hours, int minutes) {
+                                Toast.makeText(MainActivity.this, hours + ":" + minutes, Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .build()
+                        .show();
+            }
+        });
     }
 }
