@@ -462,7 +462,7 @@ new TimeDialog(getSupportFragmentManager())
 #
 **Preview** :
 
-|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_30.png" width="400"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_31.png" width="400"/>|
+|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_30.jpg" width="400"/>|<img src="https://github.com/gzeinnumer/DialogAndroid/blob/master/preview/MyLibDialog_31.jpg" width="400"/>|
 |--|--|
 |`TimeFormat.CLOCK_12H`|`TimeFormat.CLOCK_24H`|
 
