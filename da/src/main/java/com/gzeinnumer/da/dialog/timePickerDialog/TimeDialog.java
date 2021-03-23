@@ -6,6 +6,9 @@ import com.gzeinnumer.da.dialog.timePickerDialog.callback.TimeDialogPositiveCall
 
 public class TimeDialog extends TimeDialogSetting {
 
+    public TimeDialog() {
+    }
+
     public TimeDialog(FragmentManager supportFragmentManager) {
         this.supportFragmentManager = supportFragmentManager;
     }

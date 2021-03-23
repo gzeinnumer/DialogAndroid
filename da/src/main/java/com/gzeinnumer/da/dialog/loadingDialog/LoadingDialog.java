@@ -10,8 +10,11 @@ public class LoadingDialog extends LoadingDialogSetting {
 
     public static final String TAG = "CustomDialog";
 
-    private final FragmentManager _context;
-    private final FragmentTransaction _transaction;
+    private FragmentManager _context;
+    private FragmentTransaction _transaction;
+
+    public LoadingDialog() {
+    }
 
     public LoadingDialog(FragmentManager context) {
         this._context = context;

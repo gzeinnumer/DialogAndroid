@@ -6,8 +6,11 @@ import com.gzeinnumer.da.constant.DateScreenStyle;
 
 public class MultiDatePickerDialog extends MultiDatePickerDialogSetting {
 
-    public static final String TAG = "CustomDialog";
-    FragmentManager context;
+    private static final String TAG = "CustomDialog";
+    private FragmentManager context;
+
+    public MultiDatePickerDialog() {
+    }
 
     public MultiDatePickerDialog(FragmentManager context) {
         this.context = context;

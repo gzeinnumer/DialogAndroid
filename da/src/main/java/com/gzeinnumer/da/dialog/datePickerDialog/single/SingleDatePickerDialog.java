@@ -6,8 +6,11 @@ import com.gzeinnumer.da.constant.DateScreenStyle;
 
 public class SingleDatePickerDialog extends SingleDatePickerDialogSetting {
 
-    public static final String TAG = "CustomDialog";
-    FragmentManager context;
+    public static String TAG = "CustomDialog";
+    private FragmentManager context;
+
+    public SingleDatePickerDialog() {
+    }
 
     public SingleDatePickerDialog(FragmentManager context) {
         this.context = context;

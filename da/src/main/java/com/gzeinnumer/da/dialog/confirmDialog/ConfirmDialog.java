@@ -12,8 +12,11 @@ public class ConfirmDialog extends ConfirmDialogSetting {
 
     public static final String TAG = "CustomDialog";
 
-    private final FragmentManager _context;
-    private final FragmentTransaction _transaction;
+    private FragmentManager _context;
+    private FragmentTransaction _transaction;
+
+    public ConfirmDialog() {
+    }
 
     public ConfirmDialog(FragmentManager context) {
         this._context = context;
