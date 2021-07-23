@@ -205,9 +205,9 @@ public class InfoDialogSetting extends BaseDialog {
 
                 public void onFinish() {
                     try {
-                        _dBtnOkMBT.performClick();
-                        _dBtnOkMBO.performClick();
-                        _dBtnOkMBC.performClick();
+                        if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.performClick();
+                        if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.performClick();
+                        if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.performClick();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
