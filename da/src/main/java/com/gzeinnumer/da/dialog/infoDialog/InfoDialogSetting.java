@@ -146,8 +146,10 @@ public class InfoDialogSetting extends BaseDialog {
 
         if (dBtnTextSize != 0) {
             if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setTextSize((float) dBtnTextSize);
-            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.setTextSize((float) dBtnTextSize);
-            if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonOutlined)
+                _dBtnOkMBO.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonContained)
+                _dBtnOkMBC.setTextSize((float) dBtnTextSize);
         }
 
         if (tvTitleColor != 0)
@@ -222,39 +224,36 @@ public class InfoDialogSetting extends BaseDialog {
 
 
     private void initOnClick() {
-        if (btnStyle == ButtonStyle.ButtonText)
-            _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onOkPressed != null) {
-                        if (dismissIn != -1) countDownTimer.cancel();
-                        onOkPressed.onOkPressed();
-                    }
-                    getDialog().dismiss();
+        _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onOkPressed != null) {
+                    if (dismissIn != -1) countDownTimer.cancel();
+                    onOkPressed.onOkPressed();
                 }
-            });
-        if (btnStyle == ButtonStyle.ButtonOutlined)
-            _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onOkPressed != null) {
-                        if (dismissIn != -1) countDownTimer.cancel();
-                        onOkPressed.onOkPressed();
-                    }
-                    getDialog().dismiss();
+                getDialog().dismiss();
+            }
+        });
+        _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onOkPressed != null) {
+                    if (dismissIn != -1) countDownTimer.cancel();
+                    onOkPressed.onOkPressed();
                 }
-            });
-        if (btnStyle == ButtonStyle.ButtonContained)
-            _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onOkPressed != null) {
-                        if (dismissIn != -1) countDownTimer.cancel();
-                        onOkPressed.onOkPressed();
-                    }
-                    getDialog().dismiss();
+                getDialog().dismiss();
+            }
+        });
+        _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onOkPressed != null) {
+                    if (dismissIn != -1) countDownTimer.cancel();
+                    onOkPressed.onOkPressed();
                 }
-            });
+                getDialog().dismiss();
+            }
+        });
     }
 
     private void btnVisibleOk(Button button, int visible) {

@@ -73,6 +73,26 @@ dependencies {
 <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
     <!-- Customize your theme here. -->
 </style>
+
+<style name="CustomDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowMinWidthMajor">80%</item>
+    <item name="android:windowMinWidthMinor">80%</item>
+    <item name="android:windowEnterAnimation">@anim/anim_in</item>
+    <item name="android:windowExitAnimation">@anim/anim_out</item>
+</style>
+```
+
+If you want to change default color, add value to `res/color.xml`
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>
 ```
 
 If you want to change default font, add `custom_font.ttf` to your `res` directory `res->font`.
@@ -117,16 +137,6 @@ Than add this `style` to your `style.xml`/`themes.xml`
 <style name="MyButtonIcon" parent="Widget.MaterialComponents.Button.Icon">
     <item name="android:fontFamily">@font/test_font</item>
 </style>
-```
-
-If you want to change default color, add value to `res/color.xml`
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
-</resources>
 ```
 
 #
@@ -520,7 +530,7 @@ new TimeDialog(getSupportFragmentManager())
 - **3.2.3**
   - Bug Fixing
 - **3.2.4**
-  - Remove Default Animation
+  - Remove Default Animation and Color
 
 ---
 # Contribution

@@ -132,6 +132,9 @@ Here is the style
 
     <!-- res->styles.xml -->
     <style name="CustomDialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="android:windowMinWidthMajor">80%</item>
         <item name="android:windowMinWidthMinor">80%</item>
         <item name="android:windowEnterAnimation">@anim/anim_in</item>

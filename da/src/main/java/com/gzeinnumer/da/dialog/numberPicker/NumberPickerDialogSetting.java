@@ -153,8 +153,10 @@ public class NumberPickerDialogSetting extends BaseDialog {
 
         if (dBtnTextSize != 0) {
             if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setTextSize((float) dBtnTextSize);
-            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.setTextSize((float) dBtnTextSize);
-            if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonOutlined)
+                _dBtnOkMBO.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonContained)
+                _dBtnOkMBC.setTextSize((float) dBtnTextSize);
         }
 
         if (tvTitleColor != 0)
@@ -165,8 +167,10 @@ public class NumberPickerDialogSetting extends BaseDialog {
 
         if (btnTextColorCancel != 0) {
             if (btnStyle == ButtonStyle.ButtonText) _dBtnCancelMBT.setTextColor(btnTextColorCancel);
-            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnCancelMBO.setTextColor(btnTextColorCancel);
-            if (btnStyle == ButtonStyle.ButtonContained) _dBtnCancelMBC.setTextColor(btnTextColorCancel);
+            if (btnStyle == ButtonStyle.ButtonOutlined)
+                _dBtnCancelMBO.setTextColor(btnTextColorCancel);
+            if (btnStyle == ButtonStyle.ButtonContained)
+                _dBtnCancelMBC.setTextColor(btnTextColorCancel);
         }
 
         if (btnTextColorOk != 0) {
@@ -225,61 +229,54 @@ public class NumberPickerDialogSetting extends BaseDialog {
 
 
     private void initOnClick() {
-        if (btnStyle == ButtonStyle.ButtonText) {
-            _dBtnCancelMBT.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onCancelPressed != null)
-                        onCancelPressed.onCancelPressed();
-                    getDialog().dismiss();
-                }
-            });
-            _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onOkPressed != null)
-                        onOkPressed.onOkPressed(lastValue);
-                    getDialog().dismiss();
-                }
-            });
-        }
-        if (btnStyle == ButtonStyle.ButtonOutlined) {
-            _dBtnCancelMBO.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onCancelPressed != null)
-                        onCancelPressed.onCancelPressed();
-                    getDialog().dismiss();
-                }
-            });
-            _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onOkPressed != null)
-                        onOkPressed.onOkPressed(lastValue);
-                    getDialog().dismiss();
-                }
-            });
-        }
-
-        if (btnStyle == ButtonStyle.ButtonContained) {
-            _dBtnCancelMBC.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onCancelPressed != null)
-                        onCancelPressed.onCancelPressed();
-                    getDialog().dismiss();
-                }
-            });
-            _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (onOkPressed != null)
-                        onOkPressed.onOkPressed(lastValue);
-                    getDialog().dismiss();
-                }
-            });
-        }
+        _dBtnCancelMBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onCancelPressed != null)
+                    onCancelPressed.onCancelPressed();
+                getDialog().dismiss();
+            }
+        });
+        _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onOkPressed != null)
+                    onOkPressed.onOkPressed(lastValue);
+                getDialog().dismiss();
+            }
+        });
+        _dBtnCancelMBO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onCancelPressed != null)
+                    onCancelPressed.onCancelPressed();
+                getDialog().dismiss();
+            }
+        });
+        _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onOkPressed != null)
+                    onOkPressed.onOkPressed(lastValue);
+                getDialog().dismiss();
+            }
+        });
+        _dBtnCancelMBC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onCancelPressed != null)
+                    onCancelPressed.onCancelPressed();
+                getDialog().dismiss();
+            }
+        });
+        _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onOkPressed != null)
+                    onOkPressed.onOkPressed(lastValue);
+                getDialog().dismiss();
+            }
+        });
         _btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
