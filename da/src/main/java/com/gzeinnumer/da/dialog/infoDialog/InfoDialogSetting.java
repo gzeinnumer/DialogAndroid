@@ -189,9 +189,9 @@ public class InfoDialogSetting extends BaseDialog {
         }
 
         if (!buttonAllCaps) {
-            _dBtnOkMBT.setAllCaps(false);
-            _dBtnOkMBO.setAllCaps(false);
-            _dBtnOkMBC.setAllCaps(false);
+            if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setAllCaps(false);
+            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.setAllCaps(false);
+            if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.setAllCaps(false);
         }
         if (dismissIn != -1) {
             String btnNameT = _dBtnOkMBT.getText().toString();
