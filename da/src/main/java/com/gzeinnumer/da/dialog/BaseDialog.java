@@ -19,7 +19,7 @@ import com.gzeinnumer.da.R;
 public abstract class BaseDialog extends DialogFragment {
 
     private final boolean cancelable = false;
-    protected int animationStyle = R.style.DialogStyle_In;
+    protected int animationStyle = R.style.DialogStyle;
     protected boolean canceledOnTouchOutside = false;
 
     @Override

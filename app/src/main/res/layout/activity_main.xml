@@ -8,9 +8,45 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/ConfirmDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pick Time" />
+        android:text="ConfirmDialog" />
+
+    <Button
+        android:id="@+id/InfoDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="InfoDialog" />
+
+    <Button
+        android:id="@+id/NumberPickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NumberPickerDialog" />
+
+    <Button
+        android:id="@+id/LoadingDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LoadingDialog" />
+
+    <Button
+        android:id="@+id/SingleDatePickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SingleDatePickerDialog" />
+
+    <Button
+        android:id="@+id/MultiDatePickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MultiDatePickerDialog" />
+
+    <Button
+        android:id="@+id/TimeDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimeDialog" />
 
 </LinearLayout>

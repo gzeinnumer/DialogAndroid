@@ -119,9 +119,9 @@ public class InfoDialogSetting extends BaseDialog {
             _tvContent.setVisibility(View.GONE);
 
         if (dBtnOkValue != null) {
-            _dBtnOkMBT.setText(dBtnOkValue);
-            _dBtnOkMBO.setText(dBtnOkValue);
-            _dBtnOkMBC.setText(dBtnOkValue);
+            if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setText(dBtnOkValue);
+            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.setText(dBtnOkValue);
+            if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.setText(dBtnOkValue);
         }
 
         if (btnStyle != null) {
@@ -145,9 +145,9 @@ public class InfoDialogSetting extends BaseDialog {
             _tvContent.setTextSize((float) tvContentSize);
 
         if (dBtnTextSize != 0) {
-            _dBtnOkMBT.setTextSize((float) dBtnTextSize);
-            _dBtnOkMBO.setTextSize((float) dBtnTextSize);
-            _dBtnOkMBC.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.setTextSize((float) dBtnTextSize);
         }
 
         if (tvTitleColor != 0)
@@ -157,9 +157,9 @@ public class InfoDialogSetting extends BaseDialog {
             _tvContent.setTextColor(tvContentColor);
 
         if (btnTextColorOk != 0) {
-            _dBtnOkMBT.setTextColor(btnTextColorOk);
-            _dBtnOkMBO.setTextColor(btnTextColorOk);
-            _dBtnOkMBC.setTextColor(btnTextColorOk);
+            if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setTextColor(btnTextColorOk);
+            if (btnStyle == ButtonStyle.ButtonOutlined) _dBtnOkMBO.setTextColor(btnTextColorOk);
+            if (btnStyle == ButtonStyle.ButtonContained) _dBtnOkMBC.setTextColor(btnTextColorOk);
         }
 
         if (buttonGravity != -100) {
@@ -198,9 +198,12 @@ public class InfoDialogSetting extends BaseDialog {
             countDownTimer = new CountDownTimer((dismissIn + 1) * 1000, 1000) {
                 public void onTick(long millisUntilFinished) {
                     int progress = (int) millisUntilFinished / 1000;
-                    _dBtnOkMBT.setText(btnNameT + "(" + progress + ")");
-                    _dBtnOkMBO.setText(btnNameO + "(" + progress + ")");
-                    _dBtnOkMBC.setText(btnNameC + "(" + progress + ")");
+                    if (btnStyle == ButtonStyle.ButtonText)
+                        _dBtnOkMBT.setText(btnNameT + "(" + progress + ")");
+                    if (btnStyle == ButtonStyle.ButtonOutlined)
+                        _dBtnOkMBO.setText(btnNameO + "(" + progress + ")");
+                    if (btnStyle == ButtonStyle.ButtonContained)
+                        _dBtnOkMBC.setText(btnNameC + "(" + progress + ")");
                 }
 
                 public void onFinish() {
@@ -219,36 +222,39 @@ public class InfoDialogSetting extends BaseDialog {
 
 
     private void initOnClick() {
-        _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (onOkPressed != null) {
-                    if (dismissIn != -1) countDownTimer.cancel();
-                    onOkPressed.onOkPressed();
+        if (btnStyle == ButtonStyle.ButtonText)
+            _dBtnOkMBT.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (onOkPressed != null) {
+                        if (dismissIn != -1) countDownTimer.cancel();
+                        onOkPressed.onOkPressed();
+                    }
+                    getDialog().dismiss();
                 }
-                getDialog().dismiss();
-            }
-        });
-        _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (onOkPressed != null) {
-                    if (dismissIn != -1) countDownTimer.cancel();
-                    onOkPressed.onOkPressed();
+            });
+        if (btnStyle == ButtonStyle.ButtonOutlined)
+            _dBtnOkMBO.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (onOkPressed != null) {
+                        if (dismissIn != -1) countDownTimer.cancel();
+                        onOkPressed.onOkPressed();
+                    }
+                    getDialog().dismiss();
                 }
-                getDialog().dismiss();
-            }
-        });
-        _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (onOkPressed != null) {
-                    if (dismissIn != -1) countDownTimer.cancel();
-                    onOkPressed.onOkPressed();
+            });
+        if (btnStyle == ButtonStyle.ButtonContained)
+            _dBtnOkMBC.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (onOkPressed != null) {
+                        if (dismissIn != -1) countDownTimer.cancel();
+                        onOkPressed.onOkPressed();
+                    }
+                    getDialog().dismiss();
                 }
-                getDialog().dismiss();
-            }
-        });
+            });
     }
 
     private void btnVisibleOk(Button button, int visible) {
