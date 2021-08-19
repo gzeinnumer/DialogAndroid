@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.2.5-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.2.6-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -85,7 +85,7 @@ dependencies {
 </style>
 ```
 
-Add this line to `res/color.xml`
+Add This Line to `res/color.xml`. **Important**
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -532,6 +532,8 @@ new TimeDialog(getSupportFragmentManager())
 - **3.2.4**
   - Remove Default Animation and Color
 - **3.2.5**
+  - Bug Color
+- **3.2.6**
   - Bug Color
 
 ---
