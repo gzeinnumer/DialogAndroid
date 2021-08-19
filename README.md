@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.2.6-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.2.7-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -42,9 +42,11 @@ allprojects {
 // build.gradle app/module
 dependencies {
   ...
-  implementation 'com.github.gzeinnumer:DialogAndroid:version'
-  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.0.0'
   implementation 'com.google.android.material:material:1.3.0'
+  implementation 'com.github.gzeinnumer:DialogAndroid:version'
+
+  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-vesion'
+  //check on https://github.com/gzeinnumer/SimpleMaterialStyle
 }
 ```
 
@@ -534,6 +536,8 @@ new TimeDialog(getSupportFragmentManager())
 - **3.2.5**
   - Bug Color
 - **3.2.6**
+  - Bug Color
+- **3.2.7**
   - Bug Color
 
 ---
