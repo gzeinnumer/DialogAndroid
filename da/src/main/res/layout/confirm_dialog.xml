@@ -37,7 +37,6 @@
             android:id="@+id/parent_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/def_margin_half"
             android:gravity="end">
 
             <Button

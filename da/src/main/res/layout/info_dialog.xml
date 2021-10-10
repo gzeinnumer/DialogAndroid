@@ -34,7 +34,6 @@
             android:text="@string/content_dialog" />
 
         <LinearLayout
-            android:layout_marginTop="@dimen/def_margin_half"
             android:id="@+id/parent_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

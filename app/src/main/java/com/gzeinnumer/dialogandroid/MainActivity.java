@@ -3,6 +3,7 @@ package com.gzeinnumer.dialogandroid;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void infoDialog() {
         findViewById(R.id.InfoDialog).setOnClickListener(v -> new InfoDialog(getSupportFragmentManager())
+                .setAnimationStyle(R.style.CustomDialogStyle)
+                .setButtonAllCaps(false)
+                .autoDismisOnSecond(5)
+                .setButtonGravity(Gravity.CENTER)
+                .setContentAlignment(View.TEXT_ALIGNMENT_CENTER)
+                .setTitleColor(getResources().getColor(R.color.black))
+                .setButtonStyle(ButtonStyle.ButtonText)
+//                .setButtonColor(getResources().getColor(R.color.colorPrimary))
                 .setDialogType(DialogType.DialogSuccess)
                 .setTitle("ini title")
                 .setContent("ini content")

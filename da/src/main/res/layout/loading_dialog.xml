@@ -27,7 +27,6 @@
         <com.agrawalsuneet.dotsloader.loaders.SlidingLoader
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:layout_marginBottom="@dimen/def_margin"
             app:slidingloader_animDur="2000"
             app:slidingloader_distanceToMove="12"
