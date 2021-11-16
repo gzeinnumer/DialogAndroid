@@ -26,7 +26,7 @@ public class MultiDatePickerDialogSetting {
     protected MaterialDatePicker.Builder builder;
     protected MaterialDatePicker<Pair<Long, Long>> materialDatePicker;
 
-    protected String tvTitleValue;
+    protected CharSequence tvTitleValue;
     protected String timeZone = "GMT";
 
     protected Calendar calendar;

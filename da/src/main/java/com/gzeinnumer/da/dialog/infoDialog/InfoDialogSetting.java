@@ -29,8 +29,8 @@ public class InfoDialogSetting extends BaseDialog {
     protected boolean buttonAllCaps = true;
     protected ButtonStyle btnStyle;
     protected DialogType dialogType = DialogType.DialogSuccess;
-    protected String tvTitleValue;
-    protected String tvContentValue;
+    protected CharSequence tvTitleValue;
+    protected CharSequence tvContentValue;
     protected String dBtnOkValue;
     protected Drawable shapeCanvas = null;
     protected double tvTitleSize = 0;

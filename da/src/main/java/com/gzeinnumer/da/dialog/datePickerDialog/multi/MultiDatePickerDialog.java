@@ -19,6 +19,11 @@ public class MultiDatePickerDialog extends MultiDatePickerDialogSetting {
 
     //TITLE
     public MultiDatePickerDialog setTitle(String title) {
+        this.tvTitleValue = (CharSequence)title;
+        return this;
+    }
+
+    public MultiDatePickerDialog setTitle(CharSequence title) {
         this.tvTitleValue = title;
         return this;
     }

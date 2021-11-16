@@ -46,6 +46,11 @@ public class InfoDialog extends InfoDialogSetting {
         return this;
     }
 
+    public InfoDialog setTitle(CharSequence title) {
+        this.tvTitleValue = (CharSequence)title;
+        return this;
+    }
+
     public InfoDialog setTitleSize(int size) {
         this.tvTitleSize = size;
         return this;
@@ -62,8 +67,13 @@ public class InfoDialog extends InfoDialogSetting {
     }
 
     //CONTENT
-    public InfoDialog setContent(String title) {
-        this.tvContentValue = title;
+    public InfoDialog setContent(String content) {
+        this.tvContentValue = (CharSequence)content;
+        return this;
+    }
+
+    public InfoDialog setContent(CharSequence content) {
+        this.tvContentValue = content;
         return this;
     }
 

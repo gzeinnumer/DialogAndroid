@@ -13,7 +13,7 @@ public class TimeDialogSetting {
     protected FragmentManager supportFragmentManager;
     protected MaterialTimePicker materialTimePicker;
     protected TimeDialogPositiveCallBack timeValueResult;
-    protected String title = "Pick Time";
+    protected CharSequence title = "Pick Time";
     protected int timeFormat = TimeFormat.CLOCK_24H;
     protected int hour = 0;
     protected int minute = 0;

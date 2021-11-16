@@ -39,6 +39,11 @@ public class LoadingDialog extends LoadingDialogSetting {
 
     //CONTENT
     public LoadingDialog setContent(String title) {
+        this.tvContentValue = (CharSequence)title;
+        return this;
+    }
+
+    public LoadingDialog setContent(CharSequence title) {
         this.tvContentValue = title;
         return this;
     }

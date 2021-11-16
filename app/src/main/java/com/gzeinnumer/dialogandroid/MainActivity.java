@@ -1,5 +1,6 @@
 package com.gzeinnumer.dialogandroid;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.material.timepicker.TimeFormat;
 import com.gzeinnumer.da.constant.ButtonStyle;
@@ -20,13 +22,24 @@ import com.gzeinnumer.da.dialog.loadingDialog.LoadingDialog;
 import com.gzeinnumer.da.dialog.numberPicker.NumberPickerDialog;
 import com.gzeinnumer.da.dialog.timePickerDialog.TimeDialog;
 import com.gzeinnumer.da.dialog.timePickerDialog.callback.TimeDialogPositiveCallBack;
+import com.gzeinnumer.est.SpannableBuilder;
 
 public class MainActivity extends AppCompatActivity {
-
+    CharSequence sequence;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        int sizeInDp = 21;
+        int color = ContextCompat.getColor(this, R.color.purple_500);
+
+        sequence = new SpannableBuilder(getApplicationContext())
+                .text(Typeface.NORMAL,"NORMAL ")
+                .textColor(Typeface.BOLD,"BOLD ", color)
+                .textSize(Typeface.ITALIC,"ITALIC ", sizeInDp)
+                .textSizeColor(Typeface.BOLD_ITALIC,"BOLD_ITALIC ", sizeInDp, color)
+                .build();
 
         confirmDialog();
         infoDialog();
@@ -40,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
     private void confirmDialog() {
         findViewById(R.id.ConfirmDialog).setOnClickListener(v -> new ConfirmDialog(getSupportFragmentManager())
                 .setTitle("ini title")
-                .setContent("ini content")
+//                .setContent("ini content")
+                .setContent(sequence)
                 .onCancelPressedCallBack(() -> Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show())
                 .onOkPressedCallBack(() -> Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show())
                 .show());
@@ -58,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
 //                .setButtonColor(getResources().getColor(R.color.colorPrimary))
                 .setDialogType(DialogType.DialogSuccess)
                 .setTitle("ini title")
-                .setContent("ini content")
+//                .setContent("ini content")
+                .setContent(sequence)
                 .onOkPressedCallBack(() -> Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show())
                 .show());
     }
@@ -67,7 +82,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.NumberPickerDialog).setOnClickListener(v -> new NumberPickerDialog(getSupportFragmentManager())
                 .setLastValue(12)
                 .setTitle("ini title")
-                .setContent("ini content")
+//                .setContent("ini content")
+                .setContent(sequence)
                 .onOkPressedCallBack(value -> Toast.makeText(MainActivity.this, "Nilai nya " + value, Toast.LENGTH_SHORT).show())
                 .onCancelPressedCallBack(() -> Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show())
                 .show());
@@ -76,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
     private void loadingDialog() {
         findViewById(R.id.LoadingDialog).setOnClickListener(v -> {
             LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
-                    .setContent("ini content");
+//                .setContent("ini content")
+                    .setContent(sequence);
 
             loadingDialog.show();
 
@@ -87,7 +104,8 @@ public class MainActivity extends AppCompatActivity {
     private void singleDatePickerDialog() {
         findViewById(R.id.SingleDatePickerDialog).setOnClickListener(v -> new SingleDatePickerDialog(getSupportFragmentManager())
                 .setTimeZone("GMT")
-                .setTitle("Pilih tanggal")
+//                .setTitle("Pilih tanggal")
+                .setTitle(sequence)
                 .setSelectedToday(true)
                 .setTimeFormat("dd/MM/yyyy") //pastikan polanya sama
                 .setStartDate("1/08/2020") //pastikan polanya sama
@@ -100,7 +118,8 @@ public class MainActivity extends AppCompatActivity {
     private void multiDatePickerDialog() {
         findViewById(R.id.MultiDatePickerDialog).setOnClickListener(v -> new MultiDatePickerDialog(getSupportFragmentManager())
                 .setTimeZone("GMT")
-                .setTitle("Pilih tanggal")
+//                .setTitle("Pilih tanggal")
+                .setTitle(sequence)
                 .setTimeFormat("dd/MM/yyyy") //pastikan 3 pola ini sama
                 .setStartDate("1/08/2020") //pastikan 3 pola ini sama
                 .setEndDate("31/12/2020") //pastikan 3 pola ini sama
@@ -111,7 +130,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void timeDialog() {
         findViewById(R.id.TimeDialog).setOnClickListener(v -> new TimeDialog(getSupportFragmentManager())
-                .setTitle("Time")
+//                .setTitle("Time")
+                .setTitle(sequence)
                 .setHour(17)
                 .setMinute(17)
                 .setTimeFormat(TimeFormat.CLOCK_24H)

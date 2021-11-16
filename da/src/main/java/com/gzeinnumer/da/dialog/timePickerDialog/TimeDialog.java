@@ -14,6 +14,11 @@ public class TimeDialog extends TimeDialogSetting {
     }
 
     public TimeDialog setTitle(String title) {
+        this.title = (CharSequence)title;
+        return this;
+    }
+
+    public TimeDialog setTitle(CharSequence title) {
         this.title = title;
         return this;
     }

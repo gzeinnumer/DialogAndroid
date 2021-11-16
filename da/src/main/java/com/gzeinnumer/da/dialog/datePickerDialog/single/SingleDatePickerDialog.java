@@ -19,6 +19,11 @@ public class SingleDatePickerDialog extends SingleDatePickerDialogSetting {
 
     //TITLE
     public SingleDatePickerDialog setTitle(String title) {
+        this.tvTitleValue = (CharSequence)title;
+        return this;
+    }
+
+    public SingleDatePickerDialog setTitle(CharSequence title) {
         this.tvTitleValue = title;
         return this;
     }

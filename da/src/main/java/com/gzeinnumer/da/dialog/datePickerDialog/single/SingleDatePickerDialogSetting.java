@@ -25,7 +25,7 @@ public class SingleDatePickerDialogSetting {
     protected MaterialDatePicker.Builder builder;
     protected MaterialDatePicker materialDatePicker;
 
-    protected String tvTitleValue;
+    protected CharSequence tvTitleValue;
     protected String timeZone = "GMT";
 
     protected Calendar calendar;
