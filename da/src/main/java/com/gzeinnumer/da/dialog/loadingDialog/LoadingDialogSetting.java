@@ -15,7 +15,7 @@ import com.gzeinnumer.da.dialog.BaseDialog;
 
 public class LoadingDialogSetting extends BaseDialog {
 
-    protected String tvContentValue;
+    protected CharSequence tvContentValue;
     protected Drawable shapeCanvas = null;
     protected double tvContentSize = 0;
     protected int tvContentColor = 0;

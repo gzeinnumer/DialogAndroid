@@ -44,6 +44,10 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
         this.tvTitleValue = title;
         return this;
     }
+    public NumberPickerDialog setTitle(CharSequence title) {
+        this.tvTitleValue = (CharSequence)title;
+        return this;
+    }
 
     public NumberPickerDialog setTitleSize(int size) {
         this.tvTitleSize = size;
@@ -62,7 +66,11 @@ public class NumberPickerDialog extends NumberPickerDialogSetting {
 
     //CONTENT
     public NumberPickerDialog setContent(String title) {
-        this.tvContentValue = title;
+        this.tvContentValue = (CharSequence)title;
+        return this;
+    }
+    public NumberPickerDialog setContent(CharSequence content) {
+        this.tvContentValue = content;
         return this;
     }
 

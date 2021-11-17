@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.3.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.3.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -545,6 +545,8 @@ new TimeDialog(getSupportFragmentManager())
   - Bug Fixing
 - **3.3.0**
   - Remove Space From Button
+- **3.3.1**
+  - Add CharSequence to Title and Content
 
 ---
 # Contribution

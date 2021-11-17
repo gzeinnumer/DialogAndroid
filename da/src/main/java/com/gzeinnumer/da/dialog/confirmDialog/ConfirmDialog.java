@@ -41,6 +41,11 @@ public class ConfirmDialog extends ConfirmDialogSetting {
 
     //TITLE
     public ConfirmDialog setTitle(String title) {
+        this.tvTitleValue = (CharSequence) title;
+        return this;
+    }
+
+    public ConfirmDialog setTitle(CharSequence title) {
         this.tvTitleValue = title;
         return this;
     }
@@ -61,8 +66,13 @@ public class ConfirmDialog extends ConfirmDialogSetting {
     }
 
     //CONTENT
-    public ConfirmDialog setContent(String title) {
-        this.tvContentValue = title;
+    public ConfirmDialog setContent(String content) {
+        this.tvContentValue = (CharSequence) content;
+        return this;
+    }
+
+    public ConfirmDialog setContent(CharSequence content) {
+        this.tvContentValue = content;
         return this;
     }
 

@@ -28,8 +28,8 @@ public class NumberPickerDialogSetting extends BaseDialog {
     protected int buttonCancelColor = 0;
     protected boolean buttonAllCaps = true;
     protected ButtonStyle btnStyle;
-    protected String tvTitleValue;
-    protected String tvContentValue;
+    protected CharSequence tvTitleValue;
+    protected CharSequence tvContentValue;
     protected String dBtnOkValue;
     protected String dBtnCancelValue;
     protected Drawable shapeCanvas = null;
