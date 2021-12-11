@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/confirm_dialog.xml" value="0.3875" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/confirm_dialog.xml" value="0.17685185185185184" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/info_dialog.xml" value="0.17685185185185184" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/loading_dialog.xml" value="0.225" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/number_picker_dialog.xml" value="0.225" />
       </map>
     </option>
   </component>

@@ -40,17 +40,19 @@
             android:gravity="end">
 
             <Button
+                android:minWidth="0dp"
                 android:id="@+id/d_btn_cancel_MBT"
                 style="@style/MyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/def_margin"
+                android:layout_marginEnd="@dimen/space"
                 android:text="@string/cancel"
                 android:textColor="@color/colorPrimary"
                 android:visibility="gone"
                 tools:visibility="visible" />
 
             <Button
+                android:minWidth="0dp"
                 android:id="@+id/d_btn_ok_MBT"
                 style="@style/MyButtonText"
                 android:layout_width="wrap_content"
