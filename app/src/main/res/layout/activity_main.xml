@@ -49,4 +49,10 @@
         android:layout_height="wrap_content"
         android:text="TimeDialog" />
 
+    <Button
+        android:id="@+id/DebugDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DebugDialog" />
+
 </LinearLayout>

@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.3.2-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.3.3-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -59,6 +59,7 @@ dependencies {
 - [x] [SingleDatePickerDialog](#singledatepickerdialog)
 - [x] [MultiDatePickerDialog](#multidatepickerdialog)
 - [x] [TimeDialog](#timeDialog)
+- [x] [DebugDialog](#debugDialog)
 
 ---
 # Tech stack and 3rd library
@@ -479,6 +480,23 @@ new TimeDialog(getSupportFragmentManager())
 |`TimeFormat.CLOCK_12H`|`TimeFormat.CLOCK_24H`|
 
 ---
+
+### DebugDialog
+Dialog for debug.
+
+**Code** :
+
+```java
+new DebugDialog(getSupportFragmentManager())
+    .setAnimationStyle(R.style.CustomDialogStyle)
+    .setContent(DumpJSON.msg1)
+    .onOkPressedCallBack(() -> {
+        //ok action
+    })
+    .show();
+```
+
+---
 # Example Code/App
 
 [Sample Code And App](https://github.com/gzeinnumer/MyLibDialogExample)
@@ -549,6 +567,8 @@ new TimeDialog(getSupportFragmentManager())
   - Add CharSequence to Title and Content
 - **3.3.2**
   - Improve Space Between TextButton
+- **3.3.3**
+  - Spesial For Debug Dialog
 
 ---
 # Contribution
