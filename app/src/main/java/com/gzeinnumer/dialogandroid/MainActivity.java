@@ -17,6 +17,7 @@ import com.gzeinnumer.da.constant.DialogType;
 import com.gzeinnumer.da.dialog.confirmDialog.ConfirmDialog;
 import com.gzeinnumer.da.dialog.datePickerDialog.multi.MultiDatePickerDialog;
 import com.gzeinnumer.da.dialog.datePickerDialog.single.SingleDatePickerDialog;
+import com.gzeinnumer.da.dialog.debug.DebugDialog;
 import com.gzeinnumer.da.dialog.infoDialog.InfoDialog;
 import com.gzeinnumer.da.dialog.loadingDialog.LoadingDialog;
 import com.gzeinnumer.da.dialog.numberPicker.NumberPickerDialog;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         singleDatePickerDialog();
         multiDatePickerDialog();
         timeDialog();
+        debugDialog();
     }
 
     private void confirmDialog() {
@@ -137,6 +139,16 @@ public class MainActivity extends AppCompatActivity {
                 .setTimeFormat(TimeFormat.CLOCK_24H)
                 .addOnPositiveButtonClickListener((hours, minutes) -> Toast.makeText(MainActivity.this, hours + ":" + minutes, Toast.LENGTH_SHORT).show())
                 .build()
+                .show());
+    }
+
+    private void debugDialog(){
+        findViewById(R.id.DebugDialog).setOnClickListener(v -> new DebugDialog(getSupportFragmentManager())
+                .setAnimationStyle(R.style.CustomDialogStyle)
+                .setContent(DumpJSON.msg1)
+                .onOkPressedCallBack(() -> {
+
+                })
                 .show());
     }
 }
