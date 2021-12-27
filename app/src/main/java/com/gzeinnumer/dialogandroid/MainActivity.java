@@ -55,8 +55,9 @@ public class MainActivity extends AppCompatActivity {
     private void confirmDialog() {
         findViewById(R.id.ConfirmDialog).setOnClickListener(v -> new ConfirmDialog(getSupportFragmentManager())
                 .setTitle("ini title")
-//                .setContent("ini content")
-                .setContent(sequence)
+                .setContent("ini content")
+//                .setContent(sequence)
+                .setButtonStyle(ButtonStyle.ButtonOutlined)
                 .onCancelPressedCallBack(() -> Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show())
                 .onOkPressedCallBack(() -> Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show())
                 .show());
@@ -67,15 +68,15 @@ public class MainActivity extends AppCompatActivity {
                 .setAnimationStyle(R.style.CustomDialogStyle)
                 .setButtonAllCaps(false)
                 .autoDismisOnSecond(5)
+                .setButtonStyle(ButtonStyle.ButtonOutlined)
                 .setButtonGravity(Gravity.CENTER)
                 .setContentAlignment(View.TEXT_ALIGNMENT_CENTER)
                 .setTitleColor(getResources().getColor(R.color.black))
-                .setButtonStyle(ButtonStyle.ButtonText)
 //                .setButtonColor(getResources().getColor(R.color.colorPrimary))
                 .setDialogType(DialogType.DialogSuccess)
                 .setTitle("ini title")
-//                .setContent("ini content")
-                .setContent(sequence)
+                .setContent("ini content")
+//                .setContent(sequence)
                 .onOkPressedCallBack(() -> Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show())
                 .show());
     }
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("ini title")
 //                .setContent("ini content")
                 .setContent(sequence)
+                .setButtonStyle(ButtonStyle.ButtonOutlined)
                 .onOkPressedCallBack(value -> Toast.makeText(MainActivity.this, "Nilai nya " + value, Toast.LENGTH_SHORT).show())
                 .onCancelPressedCallBack(() -> Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show())
                 .show());
@@ -94,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
     private void loadingDialog() {
         findViewById(R.id.LoadingDialog).setOnClickListener(v -> {
             LoadingDialog loadingDialog = new LoadingDialog(getSupportFragmentManager())
-//                .setContent("ini content")
-                    .setContent(sequence);
+                .setContent("ini content");
+//                    .setContent(sequence);
 
             loadingDialog.show();
 
