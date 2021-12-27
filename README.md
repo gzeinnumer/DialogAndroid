@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.3.3-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.3.4-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -100,47 +100,11 @@ Add This Line to `res/color.xml`. **Important**
 
 If you want to change default font, add `custom_font.ttf` to your `res` directory `res->font`.
 Than add this `style` to your `style.xml`/`themes.xml`
-```xml
-<!-- Base application theme. -->
-<!-- Change Base Font -->
-<style name="Theme.MyLibsTesting" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
+- [**Change Default Font**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_font.md)
 
-<!-- Change TextView Font -->
-<style name="BaseTextView">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
+If you want to change default margin in dialog, add `dimens.xml` to your `res` directory `res->value->dimens.xml`.
+- [**Change Default Margin**](https://github.com/gzeinnumer/DialogAndroid/blob/master/README_margin.md)
 
-<style name="BaseTextView.Bold" parent="BaseTextView">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-
-<style name="BaseTextView.Italic" parent="BaseTextView">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-
-<style name="BaseTextView.Bold.Italic" parent="BaseTextView">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-
-<!-- Change Button Font -->
-<style name="MyButtonText" parent="Widget.MaterialComponents.Button.TextButton">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-
-<style name="MyButtonOutlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-
-<style name="MyButtonContained">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-
-<style name="MyButtonIcon" parent="Widget.MaterialComponents.Button.Icon">
-    <item name="android:fontFamily">@font/test_font</item>
-</style>
-```
 
 #
 ### ConfirmDialog
@@ -569,6 +533,8 @@ new DebugDialog(getSupportFragmentManager())
   - Improve Space Between TextButton
 - **3.3.3**
   - Spesial For Debug Dialog
+- **3.3.4**
+  - New Space
 
 ---
 # Contribution

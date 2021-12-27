@@ -2,17 +2,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dialog_canvas"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@drawable/rounded_corner">
 
     <LinearLayout
         android:id="@+id/dialog_canvas_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="@dimen/def_margin">
+        android:paddingStart="@dimen/def_margin_dialog_left"
+        android:paddingLeft="@dimen/def_margin_dialog_left"
+        android:paddingTop="@dimen/def_margin_dialog_top"
+        android:paddingEnd="@dimen/def_margin_dialog_right"
+        android:paddingRight="@dimen/def_margin_dialog_right"
+        android:paddingBottom="@dimen/def_margin_dialog_bottom">
 
         <TextView
             android:id="@+id/tv_title"
@@ -43,7 +48,8 @@
                 android:id="@+id/btn_subtract"
                 style="@style/MyButtonContained"
                 android:layout_width="40dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
                 android:text="-"
                 android:textStyle="bold" />
 
@@ -68,7 +74,8 @@
                 android:id="@+id/btn_add"
                 style="@style/MyButtonContained"
                 android:layout_width="40dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
                 android:text="+"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -86,6 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/space"
                 android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/cancel"
                 android:visibility="gone"
                 tools:visibility="visible" />
@@ -96,6 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/ok"
                 android:visibility="gone"
                 tools:visibility="visible" />
