@@ -17,7 +17,7 @@
         android:paddingTop="@dimen/def_margin_dialog_top"
         android:paddingEnd="@dimen/def_margin_dialog_right"
         android:paddingRight="@dimen/def_margin_dialog_right"
-        android:paddingBottom="@dimen/def_margin_dialog_bottom">
+        android:paddingBottom="@dimen/def_margin_dialog_right">
 
         <TextView
             android:id="@+id/tv_title"
