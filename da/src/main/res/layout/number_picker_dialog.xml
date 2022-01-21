@@ -96,6 +96,7 @@
                 android:minHeight="0dp"
                 android:text="@string/cancel"
                 android:visibility="gone"
+                android:layout_marginStart="@dimen/def_margin_half"
                 tools:visibility="visible" />
 
             <Button
@@ -106,6 +107,7 @@
                 android:minWidth="0dp"
                 android:minHeight="0dp"
                 android:text="@string/ok"
+                android:layout_marginEnd="@dimen/def_margin_half"
                 android:visibility="gone"
                 tools:visibility="visible" />
 
