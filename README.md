@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-    <a><img src="https://img.shields.io/badge/Version-3.3.4-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-3.3.5-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/Kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -535,6 +535,8 @@ new DebugDialog(getSupportFragmentManager())
   - Spesial For Debug Dialog
 - **3.3.4**
   - New Space
+- **3.3.5**
+  - Space
 
 ---
 # Contribution
