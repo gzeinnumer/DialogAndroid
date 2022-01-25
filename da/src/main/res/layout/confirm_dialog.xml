@@ -49,11 +49,11 @@
                 style="@style/MyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/def_margin_half"
                 android:layout_marginEnd="@dimen/space"
                 android:minWidth="0dp"
                 android:minHeight="0dp"
                 android:text="@string/cancel"
-                android:layout_marginStart="@dimen/def_margin_half"
                 android:textColor="@color/colorPrimary"
                 android:visibility="gone"
                 tools:visibility="visible" />
@@ -63,9 +63,9 @@
                 style="@style/MyButtonText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/def_margin_half"
                 android:minWidth="0dp"
                 android:minHeight="0dp"
-                android:layout_marginEnd="@dimen/def_margin_half"
                 android:text="@string/ok"
                 android:textColor="@color/colorPrimary"
                 android:visibility="gone"
@@ -77,18 +77,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/def_margin"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/cancel"
                 android:textColor="@color/colorPrimary"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible" />
 
             <Button
                 android:id="@+id/d_btn_ok_MBO"
                 style="@style/MyButtonOutlined"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/ok"
                 android:textColor="@color/colorPrimary"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible" />
 
             <Button
                 android:id="@+id/d_btn_cancel_MBC"
@@ -97,8 +103,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/def_margin"
                 android:backgroundTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/cancel"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible" />
 
             <Button
                 android:id="@+id/d_btn_ok_MBC"
@@ -106,8 +115,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/colorPrimary"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
                 android:text="@string/ok"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:visibility="visible" />
 
         </LinearLayout>
     </LinearLayout>

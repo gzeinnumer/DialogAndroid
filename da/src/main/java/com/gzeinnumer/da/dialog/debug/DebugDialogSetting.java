@@ -1,5 +1,6 @@
 package com.gzeinnumer.da.dialog.debug;
 
+import android.content.Context;
 import android.graphics.Point;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -47,6 +49,7 @@ public class DebugDialogSetting extends BaseDialog {
     private LinearLayout _parentButton;
     private TextView _tvContent;
     private Button _dBtnOkMBT;
+    private Button _dBtnCopyMBT;
     private int gravity = Gravity.CENTER;
 
     private void initView() {
@@ -55,6 +58,7 @@ public class DebugDialogSetting extends BaseDialog {
         _parentButton = _view.findViewById(R.id.parent_button);
         _tvContent = _view.findViewById(R.id.tv_content);
         _dBtnOkMBT = _view.findViewById(R.id.d_btn_ok_MBT);
+        _dBtnCopyMBT = _view.findViewById(R.id.d_btn_copy_MBT);
     }
 
     @Override
@@ -116,5 +120,26 @@ public class DebugDialogSetting extends BaseDialog {
                 getDialog().dismiss();
             }
         });
+        _dBtnCopyMBT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (tvContentValue != null){
+                    setClipboard(requireContext(), tvContentValue.toString());
+                    Toast.makeText(requireContext(), "Copied To Clipboard", Toast.LENGTH_SHORT).show();
+                }
+                getDialog().dismiss();
+            }
+        });
+    }
+
+    private void setClipboard(Context context, String text) {
+        if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.HONEYCOMB) {
+            android.text.ClipboardManager clipboard = (android.text.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+            clipboard.setText(text);
+        } else {
+            android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+            android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", text);
+            clipboard.setPrimaryClip(clip);
+        }
     }
 }
