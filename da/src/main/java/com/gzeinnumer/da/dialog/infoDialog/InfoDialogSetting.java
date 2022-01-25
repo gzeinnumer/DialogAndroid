@@ -89,19 +89,31 @@ public class InfoDialogSetting extends BaseDialog {
                 _tvTitle.setTextColor(getResources().getColor(R.color.green_500));
                 _dBtnOkMBT.setTextColor(getResources().getColor(R.color.green_500));
                 _dBtnOkMBO.setTextColor(getResources().getColor(R.color.green_500));
-                _dBtnOkMBC.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.green_500)));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    _dBtnOkMBC.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.green_500)));
+                } else {
+                    _dBtnOkMBC.setBackgroundColor(getResources().getColor(R.color.green_500));
+                }
             }
             if (dialogType == DialogType.DialogError) {
                 _tvTitle.setTextColor(getResources().getColor(R.color.red_500));
                 _dBtnOkMBT.setTextColor(getResources().getColor(R.color.red_500));
                 _dBtnOkMBO.setTextColor(getResources().getColor(R.color.red_500));
-                _dBtnOkMBC.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.red_500)));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    _dBtnOkMBC.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.red_500)));
+                } else {
+                    _dBtnOkMBC.setBackgroundColor(getResources().getColor(R.color.red_500));
+                }
             }
             if (dialogType == DialogType.DialogWarning) {
                 _tvTitle.setTextColor(getResources().getColor(R.color.yellow_500));
                 _dBtnOkMBT.setTextColor(getResources().getColor(R.color.yellow_500));
                 _dBtnOkMBO.setTextColor(getResources().getColor(R.color.yellow_500));
-                _dBtnOkMBC.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.yellow_500)));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    _dBtnOkMBC.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.yellow_500)));
+                } else {
+                    _dBtnOkMBC.setBackgroundColor(getResources().getColor(R.color.yellow_500));
+                }
             }
         }
 
