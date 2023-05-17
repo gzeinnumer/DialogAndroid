@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("ini title")
                 .setContent("ini content")
 //                .setContent(sequence)
-                .setButtonStyle(ButtonStyle.ButtonOutlined)
+//                .setButtonStyle(ButtonStyle.ButtonOutlined)
                 .onCancelPressedCallBack(() -> Toast.makeText(MainActivity.this, "Cancel", Toast.LENGTH_SHORT).show())
                 .onOkPressedCallBack(() -> Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show())
                 .show());
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 .setAnimationStyle(R.style.CustomDialogStyle)
                 .setButtonAllCaps(false)
                 .autoDismisOnSecond(5)
-                .setButtonStyle(ButtonStyle.ButtonOutlined)
+//                .setButtonStyle(ButtonStyle.ButtonOutlined)
                 .setButtonGravity(Gravity.CENTER)
                 .setContentAlignment(View.TEXT_ALIGNMENT_CENTER)
                 .setTitleColor(getResources().getColor(R.color.black))

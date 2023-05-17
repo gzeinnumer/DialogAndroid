@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#00b48d</color>
-    <color name="colorPrimaryDark">#00b48d</color>
-    <color name="colorAccent">#00b48d</color>
+    <color name="colorPrimary">@color/red_500</color>
+    <color name="colorPrimaryDark">@color/red_500</color>
+    <color name="colorAccent">@color/amber_500</color>
 </resources>

@@ -9,6 +9,9 @@
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/info_dialog.xml" value="0.17685185185185184" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/loading_dialog.xml" value="0.225" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogAndroid/da/src/main/res/layout/number_picker_dialog.xml" value="0.225" />
+        <entry key="da/src/main/res/layout/confirm_dialog.xml" value="0.303125" />
+        <entry key="da/src/main/res/layout/debug_dialog.xml" value="0.303125" />
+        <entry key="da/src/main/res/layout/info_dialog.xml" value="0.303125" />
       </map>
     </option>
   </component>

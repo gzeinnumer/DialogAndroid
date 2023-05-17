@@ -148,7 +148,8 @@ public class ConfirmDialogSetting extends BaseDialog {
                 _dBtnCancelMBO.setTextSize((float) dBtnTextSize);
             if (btnStyle == ButtonStyle.ButtonContained)
                 _dBtnCancelMBC.setTextSize((float) dBtnTextSize);
-            if (btnStyle == ButtonStyle.ButtonText) _dBtnOkMBT.setTextSize((float) dBtnTextSize);
+            if (btnStyle == ButtonStyle.ButtonText)
+                _dBtnOkMBT.setTextSize((float) dBtnTextSize);
             if (btnStyle == ButtonStyle.ButtonOutlined)
                 _dBtnOkMBO.setTextSize((float) dBtnTextSize);
             if (btnStyle == ButtonStyle.ButtonContained)
