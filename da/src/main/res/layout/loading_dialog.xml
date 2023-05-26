@@ -29,16 +29,5 @@
             android:text="@string/content_dialog"
             android:textAlignment="center" />
 
-        <com.agrawalsuneet.dotsloader.loaders.SlidingLoader
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:slidingloader_animDur="2000"
-            app:slidingloader_distanceToMove="12"
-            app:slidingloader_dotsDist="12dp"
-            app:slidingloader_dotsRadius="8dp"
-            app:slidingloader_firstDotColor="@color/colorPrimary"
-            app:slidingloader_secondDotColor="@color/colorAccent"
-            app:slidingloader_thirdDotColor="@color/colorPrimaryDark" />
-
     </LinearLayout>
 </LinearLayout>

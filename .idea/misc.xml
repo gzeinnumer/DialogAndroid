@@ -12,6 +12,7 @@
         <entry key="da/src/main/res/layout/confirm_dialog.xml" value="0.303125" />
         <entry key="da/src/main/res/layout/debug_dialog.xml" value="0.303125" />
         <entry key="da/src/main/res/layout/info_dialog.xml" value="0.303125" />
+        <entry key="da/src/main/res/layout/loading_dialog.xml" value="0.3609375" />
       </map>
     </option>
   </component>

@@ -39,5 +39,5 @@ dependencies {
     implementation 'com.github.gzeinnumer:EasySpannableText:1.0.1'
     implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.3.3'
     implementation 'com.google.android.material:material:1.4.0'
-    api 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
+//    api 'com.agrawalsuneet.androidlibs:dotsloader:1.4'
 }
